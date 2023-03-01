@@ -4,7 +4,7 @@ const btnStop = document.querySelector('button[data-stop]');
 const body = document.querySelector('body');
 
 let timerId = null;
-const INTERVAL_DELAY = 1000;
+const INTERVAL_DELAY = 100;
 btnStart.disabled = false;
 btnStop.disabled = true;
 
@@ -17,6 +17,7 @@ function updateBackgroundColor (){
 }  
 
 btnStart.addEventListener('click', onBtnStartClick);
+btnStop.addEventListener('click', onBtnStopClick);
 
 function onBtnStartClick(){
     console.log(`Call onBtnStartClick every ${INTERVAL_DELAY} ms`)
@@ -26,7 +27,7 @@ function onBtnStartClick(){
     btnStop.disabled = false;
 };
 
-btnStop.addEventListener('click', onBtnStopClick);
+
 
 function onBtnStopClick(){
     btnStart.disabled = false;
