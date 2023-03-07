@@ -4,7 +4,7 @@ const btnStop = document.querySelector('button[data-stop]');
 const body = document.querySelector('body');
 
 let timerId = null;
-const INTERVAL_DELAY = 100;
+const INTERVAL_DELAY = 500;
 btnStart.disabled = false;
 btnStop.disabled = true;
 
