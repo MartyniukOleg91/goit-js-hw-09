@@ -20,10 +20,10 @@ btnStart.addEventListener('click', onBtnStartClick);
 btnStop.addEventListener('click', onBtnStopClick);
 
 function togle() {
-
     if (btnStart.disabled) {
         btnStart.disabled = false;
         btnStop.disabled = true;
+        return
     } else
     btnStart.disabled = true;
     btnStop.disabled = false;
