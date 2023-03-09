@@ -21,12 +21,12 @@ btnStop.addEventListener('click', onBtnStopClick);
 
 function togle() {
     if (btnStart.disabled) {
-        btnStart.disabled = true;
-        btnStop.disabled = false;
+        btnStart.disabled = false;
+        btnStop.disabled = true;
         return;
     } else
-    btnStart.disabled = false;
-    btnStop.disabled = true;
+    btnStart.disabled = true;
+    btnStop.disabled = false;
 }
 
 function onBtnStartClick(){
