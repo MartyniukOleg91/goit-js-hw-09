@@ -31,7 +31,6 @@ function togle() {
 
 function onBtnStartClick(){
     console.log(`Call onBtnStartClick every ${INTERVAL_DELAY} ms`)
-
     timerId = setInterval(updateBackgroundColor, INTERVAL_DELAY);
     togle()
 };
@@ -40,7 +39,6 @@ function onBtnStartClick(){
 
 function onBtnStopClick(){
     togle()
-    
     clearInterval(timerId);
     console.log(`Interval has stopped!`);
 };
