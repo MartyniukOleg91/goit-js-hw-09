@@ -53,7 +53,7 @@ function addLeadingZero(value) {
 }
 
 
-function leading() {
+const leading = function() {
   days.textContent = addLeadingZero(timeObject.days);
   hours.textContent = addLeadingZero(timeObject.hours);
   minutes.textContent = addLeadingZero(timeObject.minutes);
