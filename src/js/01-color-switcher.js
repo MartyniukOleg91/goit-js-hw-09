@@ -34,7 +34,8 @@ function onBtnStartClick(){
 
 
 function onBtnStopClick(){
-    togle()
+    !togle()
+    
     clearInterval(timerId);
     console.log(`Interval has stopped!`);
 };
