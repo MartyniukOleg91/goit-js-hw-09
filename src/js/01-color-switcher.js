@@ -19,19 +19,22 @@ function updateBackgroundColor (){
 btnStart.addEventListener('click', onBtnStartClick);
 btnStop.addEventListener('click', onBtnStopClick);
 
+function togle() {
+    btnStart.disabled = true;
+    btnStop.disabled = false;
+}
+
 function onBtnStartClick(){
     console.log(`Call onBtnStartClick every ${INTERVAL_DELAY} ms`)
 
     timerId = setInterval(updateBackgroundColor, INTERVAL_DELAY);
-    btnStart.disabled = true;
-    btnStop.disabled = false;
+    togle()
 };
 
 
 
 function onBtnStopClick(){
-    btnStart.disabled = false;
-    btnStop.disabled = true;
+    togle()
     clearInterval(timerId);
     console.log(`Interval has stopped!`);
 };
